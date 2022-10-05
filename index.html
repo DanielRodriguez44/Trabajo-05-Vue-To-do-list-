@@ -21,11 +21,11 @@
 </head>
 <body>
     <div id="app" class="container">
-        <h1>Todo List</h1>
+        <h1>To-do Lista</h1>
 
         <div v-if="!isEditing">
             <input type="text" v-model="todo">
-            <input type="submit" value="Add" @click="storeTodo">
+            <input type="submit" value="Agregar" @click="storeTodo">
         </div>
         <div v-else>
             <input type="text" v-model="todo">
@@ -35,8 +35,8 @@
         <ol>
             <li v-for="(todo, index) in todos">
                 {{ todo }}
-                <button @click="editTodo(index, todo)">Edit</button>
-                <button @click="removeTodo(index)">Delete</button>
+                <button @click="editTodo(index, todo)">Editar</button>
+                <button @click="removeTodo(index)">Borrar</button>
             </li>
         </ol>
     </div>
