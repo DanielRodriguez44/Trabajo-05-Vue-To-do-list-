@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app" class="container">
-        <h1>To-do Lista</h1>
+        <h1>To - do Lista </h1>
 
         <div v-if="!isEditing">
             <input type="text" v-model="todo">
@@ -29,7 +29,7 @@
         </div>
         <div v-else>
             <input type="text" v-model="todo">
-            <input type="submit" value="Update" @click="updateTodo">
+            <input type="submit" value="Actualizar" @click="updateTodo">
         </div>
 
         <ol>
